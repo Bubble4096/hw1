@@ -11,8 +11,10 @@ the function below should be the only one in this file.
 */
 
 #include "split.h"
-#include <cstddef>
-#include <iostream>
+//#include <cstddef>
+//#include <iostream>
+#define NULL 0
+
 using namespace std;
 
 /* Add a prototype for a helper function here if you need */
@@ -45,6 +47,5 @@ if(in==NULL ){
   odds->next = NULL;
   
   split(in, odds->next, evens);
-
 }
 }
